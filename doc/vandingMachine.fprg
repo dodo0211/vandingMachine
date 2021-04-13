@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.9">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="mrhi6-10"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-12-29 05:21:15 &#50724;&#54980;"/>
+        <attribute name="created" value="bXJoaTYtMTA7IERFU0tUT1AtT1VCSk5PSTsgMjAyMC0xMi0yOTsgMDQ6NTg6MjYg7Jik7ZuEOyAxMDg2NzU="/>
+        <attribute name="edited" value="bXJoaTYtMTA7IERFU0tUT1AtT1VCSk5PSTsgMjAyMC0xMi0yOTsgMDU6MjE6MTUg7Jik7ZuEOyAxMDg2NjQ="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="point" type="Integer" array="False" size=""/>
+            <declare name="yesNo" type="Integer" array="False" size=""/>
+            <declare name="input" type="Integer" array="False" size=""/>
+            <declare name="canAmount" type="Integer" array="False" size=""/>
+            <declare name="petAmount" type="Integer" array="False" size=""/>
+            <declare name="peopleCount" type="Integer" array="False" size=""/>
+            <declare name="sum" type="Integer" array="False" size=""/>
+            <declare name="feed" type="Integer" array="False" size=""/>
+            <declare name="flag" type="Integer" array="False" size=""/>
+            <while expression="flag==1">
+                <call expression="printVandingMachine"/>
+                <while expression="flag==1">
+                    <call expression="askingLabel"/>
+                    <if expression="yesNo">
+                        <then>
+                            <output expression="&quot;(&#45796;&#51020;&#45800;&#44228;&#47196;)&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;&#49345;&#54364; &#51228;&#44144; &#54980; &#51116;&#49884;&#46020; &#48148;&#46988;&quot;" newline="True"/>
+                        </else>
+                    </if>
+                    <if expression="feedPoint">
+                        <then>
+                            <call expression="printFeed"/>
+                        </then>
+                        <else/>
+                    </if>
+                </while>
+            </while>
+        </body>
+    </function>
+</flowgorithm>

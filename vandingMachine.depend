@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1609230533 source:c:\users\mrhi6-10\desktop\vandingmachine\main.c
+	<stdio.h>
+	<stdlib.h>
+
